@@ -1,0 +1,16 @@
+.roompage{
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh
+}
+.roomlanding{
+  position: relative;
+  min-height:calc(80vh - 66px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./../img/room1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

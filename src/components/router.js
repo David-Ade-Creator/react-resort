@@ -12,7 +12,7 @@ function RouterPage(){
     <Switch>
     <Route path="/" component={HomePage} exact />
     <Route path="/rooms" component={RoomsPage} exact/>
-    <Route path="/singleroom/:slir" component={SingleRoomPage} exact />
+    <Route path="/singleroom/:slug" component={SingleRoomPage} exact />
     <Route component={ErrorPage} exact />
     </Switch>
     </>

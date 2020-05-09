@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import './home.css'
 import Banner from './../components/banner';
 import Service from './../components/service';
+import FeaturedRooms from './../components/featuredRooms';
 
 
 function HomePage(){
@@ -15,6 +16,7 @@ function HomePage(){
      </Banner>
     </div>
     <Service />
+    <FeaturedRooms />
     </div>
   )
 }

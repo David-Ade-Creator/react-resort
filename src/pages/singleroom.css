@@ -1,0 +1,19 @@
+*{
+ box-sizing: border-box;
+}
+.singleroompage{
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh
+}
+.singleroomlanding{
+  position: relative;
+  min-height:calc(80vh - 66px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./../img/room7.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

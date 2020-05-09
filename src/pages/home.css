@@ -26,14 +26,13 @@ min-height: 350px;
 }
 .detail-list{
   text-align: center;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   width: 20%;
   padding-top: 15px;
 }
 .detail-list span{
   font-size: 30px;
-  color:red;
-  opacity: 0.8;
+  color:#db5035;
 }
 .detail-list h3{
   color:#0a090a;
@@ -48,4 +47,17 @@ min-height: 350px;
   .detail-list{
     width: 90%;
   }
+}
+/*featuredRooms*/
+.featured-rooms{
+  padding-top: 20px;
+  width: 100%;
+  min-height: 250px;
+  background-color:#fafafa;
+}
+.featured-room-center{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

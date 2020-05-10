@@ -2,7 +2,7 @@ import React from 'react';
 import './rooms.css';
 import {Link} from 'react-router-dom';
 import Banner from './../components/banner';
-
+import RoomsContainer from './../components/RoomsContainer';
 
 function RoomsPage(){
   return (
@@ -12,6 +12,7 @@ function RoomsPage(){
      <Link to="/" className="room-link">Home</Link>
      </Banner>
     </div>
+    <RoomsContainer />
     </div>
   )
 }

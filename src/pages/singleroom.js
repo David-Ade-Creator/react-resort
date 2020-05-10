@@ -26,8 +26,16 @@ export default class FeaturedRooms extends Component{
       </div>
     );
     }
-    const {name,description,capacity,size,price,extras,
-      breakfast,pets,images} = room;
+    const {
+      name,
+      description,
+      capacity,
+      size,
+      price,
+      extras,
+      breakfast,
+      pets,
+      images} = room;
   return (
     <div className="singleroompage">
     <div className="singleroomlanding">
@@ -35,6 +43,41 @@ export default class FeaturedRooms extends Component{
      <Link to="/" className="room-link">Rooms</Link>
      </Banner>
     </div>
+    <section className="single-room">
+    <div className="single-room-images">
+    {images.map((image,index)=>{
+    return  <img key={index} src={image} alt={name} />
+    })}
+    </div>
+    <div className="single-room-info">
+    <article className="desc">
+    <h3>Details</h3>
+    <p>{description}</p>
+    </article>
+    <article className="info">
+    <h3>Info</h3>
+    <h4>Price : ${price}</h4>
+    <h4>Size : {size} SQFT</h4>
+    <h4>
+    max capacity : {
+      capacity > 1 ?`${capacity} people`: `${capacity} person`
+    }
+    </h4>
+    <h4>
+    {pets? "Pets allowed" : "No pets allowed"}
+    </h4>
+    <h4>{breakfast && "Free Breakfast included"}</h4>
+    </article>
+    </div>
+    </section>
+    <section className="room-extras">
+    <h4>Extras</h4>
+    <ul>
+    {extras.map((item,index)=>{
+      return <li key={index}>{item}</li>
+    })}
+    </ul>
+    </section>
     </div>
   )
 }

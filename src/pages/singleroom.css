@@ -3,7 +3,7 @@
 }
 .singleroompage{
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   height: 100vh
 }
 .singleroomlanding{
@@ -16,4 +16,28 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.single-room-images{
+  width:100%;
+  margin: 40px 0 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.single-room-images img{
+  width:20%;
+  margin-top: 40px;
+  height: 150px;
+}
+@media screen and (max-width:991px){
+  .single-room-images img{
+    width:40%;
+  }
+}
+@media screen and (max-width:600px){
+  .single-room-images img{
+    width:80%;
+    margin: auto;
+    margin-top: 40px;
+  }
 }
